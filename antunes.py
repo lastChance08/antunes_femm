@@ -68,7 +68,7 @@ for k in range(n):
         if take_screenshots:
             femm.mo_showdensityplot(1, 0, 0, 2, 'bmag')  # Flux density normalized to 2T
             femm.mo_showvectorplot(1)
-            femm.mo_savebitmap(screens_folder + str(k) + '.png')
+            femm.mo_savebitmap(screens_folder + str(k//10).zfill(10) + '.png')
         print("Torque ")
         print({tta: tq})
         print("Flux A ")
